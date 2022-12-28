@@ -1,0 +1,9 @@
+project: Pyverilog
+target: fuzz-log
+testsuite:
+    - file://mayhem/testsuite
+
+cmds:
+  - cmd: /src/mayhem/fuzz_log.py
+    libfuzzer: true
+    timeout: 12
